@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity"
+    android:orientation="vertical"
+    android:background="@color/cardview_dark_background"
+    >
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/player"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/cardview_dark_background"/>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="TextView"
+        android:textSize="30sp"
+        tools:text="IT Chapter Two"
+        android:background="@color/cardview_dark_background"
+        android:textColor="@color/cardview_light_background"
+        />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="@style/Widget.AppCompat.RatingBar.Indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="true"
+        android:numStars="10"
+        android:rating="4.5"
+        android:background="@color/cardview_dark_background"/>
+
+    <TextView
+        android:id="@+id/tvOverview"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="TextView"
+        android:textSize="14sp"
+        tools:text="Astronauts who have seen the Earth from space have often described the 'Overview Effect', an experience that has transformed their perspective of the planet and mankind's place upon it, and enabled them to perceive it as our shared home, without boundaries between nations or species. 'Overview' is a short film that explores this perspective through interviews with astronauts who have experienced the Overview Effect."
+        android:background="@color/cardview_dark_background"
+        android:textColor="@color/cardview_light_background"/>
+</LinearLayout>
